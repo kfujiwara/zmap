@@ -17,7 +17,7 @@
 #include <net/if.h>
 #include <net/if_dl.h>
 
-#if defined(_SYSTYPE_BSD)
+#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__DragonFly__)
 
 #if __GNUC__ < 4
 #error "gcc version >= 4 is required"
